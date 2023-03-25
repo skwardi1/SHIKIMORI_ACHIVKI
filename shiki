@@ -1,0 +1,445 @@
+/*! CSS Used from: https://shikimori.one/assets/application-78bc40050e06824fabc0e063ba7e1fe337afb6275e8f15f230bc93737bcfc749.css ; media=all */
+@media all{
+*{-webkit-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;border:none;}
+a{background:transparent;}
+img{border:0;}
+.b-achievement{margin-bottom:30px;line-height:1.65;position:relative;-webkit-transition:-webkit-filter 0.25s;transition:-webkit-filter 0.25s;transition:filter 0.25s;transition:filter 0.25s, -webkit-filter 0.25s;}
+.b-achievement:last-child{margin-bottom:0;}
+.b-achievement:after{clear:left;display:block;content:' ';}
+@media screen and (min-width: 768px){
+.b-achievement{margin-bottom:30px;line-height:1.65;position:relative;}
+.b-achievement:last-child{margin-bottom:0;}
+}
+@media screen and (max-width: 767px){
+.b-achievement{margin-bottom:45px;line-height:1.65;position:relative;}
+.b-achievement:last-child{margin-bottom:0;}
+}
+@media screen and (min-width: 481px) and (max-width: 767px){
+.b-achievement .c-about{float:left;margin-right:4%;position:relative;width:48%;}
+.b-achievement .c-about:nth-child(2n+1){clear:left;}
+.b-achievement .c-image{float:left;margin-right:4%;position:relative;width:48%;padding-top:24%;}
+.b-achievement .c-image:nth-child(2n){margin-right:0;}
+.b-achievement .c-image:nth-child(2n+1){clear:left;}
+.b-achievement .c-image:last-child{margin-right:0;}
+}
+@media screen and (min-width: 768px){
+.b-achievement .c-about{float:left;margin-right:4%;position:relative;width:48%;}
+.b-achievement .c-about:nth-child(2n+1){clear:left;}
+.b-achievement .c-image{float:left;margin-right:4%;position:relative;width:48%;padding-top:24%;}
+.b-achievement .c-image:nth-child(2n){margin-right:0;}
+.b-achievement .c-image:nth-child(2n+1){clear:left;}
+.b-achievement .c-image:last-child{margin-right:0;}
+}
+@media screen and (max-width: 480px){
+.b-achievement .c-about{float:left;margin-right:0%;position:relative;width:100%;}
+.b-achievement .c-about:nth-child(1n){margin-right:0;}
+.b-achievement .c-about:nth-child(1n+1){clear:left;}
+.b-achievement .c-image{float:left;margin-right:0%;position:relative;width:100%;padding-top:50%;}
+.b-achievement .c-image:nth-child(1n){margin-right:0;}
+.b-achievement .c-image:nth-child(1n+1){clear:left;}
+.b-achievement .c-image:last-child{margin-right:0;}
+}
+.b-achievement.is-badge{overflow:hidden;}
+.b-achievement.is-badge:before{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;background:rgba(17,34,51,0.5);bottom:2px;-webkit-box-sizing:border-box;box-sizing:border-box;color:#fff;content:attr(data-hint);font-size:11px;height:20px;left:0;line-height:20px;padding:0 8px;position:absolute;width:100%;z-index:1;}
+.b-achievement.is-badge:hover:after{opacity:1;}
+.b-achievement.is-badge:after{background:rgba(17,34,51,0.7);color:#fff;content:attr(data-progress) "%";font-size:12px;height:20px;line-height:20px;opacity:0;position:absolute;right:3px;text-align:center;top:3px;-webkit-transition:opacity 0.25s;transition:opacity 0.25s;width:34px;z-index:1;}
+.b-achievement.is-badge .c-image{margin-right:0;padding-top:50%;width:100%;}
+.b-achievement img{-webkit-transition:opacity 0.25s;transition:opacity 0.25s;}
+.b-achievement.level-0:not(:hover){-webkit-filter:grayscale(88%);filter:grayscale(88%);}
+.b-achievement.level-0:not(:hover) img{opacity:0.5;}
+.b-achievement .c-image .inner{height:100%;left:0;position:absolute;top:0;width:100%;}
+.b-achievement .c-image .inner a{line-height:0;}
+.b-achievement .c-image .inner a img{display:inline-block;height:100%;max-width:100%;width:100%;}
+.b-achievement .c-image .inner a .border{border:3px solid #9da2a8;height:100%;position:absolute;width:100%;z-index:1;}
+.b-achievement .c-about a.title{color:var(--link-color);cursor:pointer;}
+@media screen and (min-width: 1024px){
+.b-achievement .c-about a.title:hover{color:var(--link-hover-color);}
+}
+.b-achievement .c-about a.title:active{color:var(--link-active-color);}
+@media screen and (min-width: 1024px){
+.b-achievement .c-about a.title:hover{text-decoration:underline;border-bottom-color:var(--link-border-hover-color);}
+}
+.b-achievement .c-about a.title:active{border-bottom-color:var(--link-border-active-color);}
+.b-achievement .c-about .title{font-size:15px;font-weight:bold;line-height:1.3;margin-bottom:3px;margin-top:-5px;display:block;}
+.b-achievement .c-about .percent{float:right;font-size:12px;color:#4e5257;}
+.b-achievement .c-about .hint{font-size:12px;margin-bottom:1px;color:#acb1b4;}
+.b-achievement .c-about .progress{background:#eee;height:3px;margin-bottom:5px;width:100%;}
+.b-achievement .c-about .progress .bar{background:#6295bd;height:100%;}
+.b-achievement .c-about .text{margin-bottom:5px;}
+.b-badge{display:inline-block;line-height:0;margin-bottom:5px;position:relative;-webkit-transition:-webkit-filter 0.25s;transition:-webkit-filter 0.25s;transition:filter 0.25s;transition:filter 0.25s, -webkit-filter 0.25s;}
+.b-badge:hover:before{opacity:1;}
+.b-badge[data-progress="0"]:before,.b-badge[data-progress="100"]:before{opacity:0;}
+.b-badge:before{background:rgba(17,34,51,0.7);color:#fff;content:attr(data-progress) "%";font-size:12px;height:20px;line-height:20px;opacity:0;position:absolute;right:0;text-align:center;top:0;-webkit-transition:opacity 0.25s;transition:opacity 0.25s;width:34px;z-index:1;}
+.b-badge img{max-width:100%;line-height:0;}
+.b-badge img{-webkit-transition:opacity 0.25s;transition:opacity 0.25s;}
+.b-badge.level-0:not(:hover),.b-badge.unavailable:not(:hover){-webkit-filter:grayscale(88%);filter:grayscale(88%);}
+.b-badge.level-0:not(:hover) img,.b-badge.unavailable:not(:hover) img{opacity:0.5;}
+.b-badge.level-0.unavailable:not(:hover){-webkit-filter:grayscale(100%);filter:grayscale(100%);}
+.b-badge.level-0.unavailable:not(:hover) img{opacity:0.2;}
+.blue{color:#4bf;background:#daf1ff;border-left:5px solid #bce6ff;}
+.green{color:#74d61f;background:#e7f6da;border-left:5px solid #d7efc3;}
+.orange{color:#ff8a3c;background:#ffe8d8;border-left:5px solid #ffd5b8;}
+@media screen and (max-width: 1023px){
+.b-list_switchers .switcher{margin-left:10px!important;}
+}
+.b-list_switchers .switcher.popularity{cursor:pointer;color:#444;}
+.b-list_switchers .switcher.popularity:before,.b-list_switchers .switcher.popularity:after{cursor:pointer;display:inline-block;font-size:13px;line-height:24px;text-align:center;width:24px;}
+@media screen and (max-width: 1023px){
+.b-list_switchers .switcher.popularity:before,.b-list_switchers .switcher.popularity:after{font-size:17px;line-height:30px;width:30px;}
+}
+.b-list_switchers .switcher.popularity:before{font-family:shikimori;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-font-feature-settings:'liga';font-feature-settings:'liga';text-transform:none;letter-spacing:normal;content:"";}
+@media screen and (max-width: 1023px){
+.b-list_switchers .switcher.popularity{white-space:nowrap;}
+.b-list_switchers .switcher.popularity:after{font-size:17px;padding-left:5px;}
+}
+@media screen and (min-width: 1024px){
+.b-list_switchers .switcher.popularity:hover{color:var(--link-hover-color);}
+}
+.b-list_switchers .switcher.popularity:active{color:var(--link-active-color);}
+@media screen and (min-width: 1024px){
+.b-list_switchers .switcher.popularity{margin-left:15px;}
+.b-list_switchers .switcher.popularity:first-child{margin-left:0;}
+}
+@media screen and (max-width: 1023px){
+.b-list_switchers .switcher.popularity{margin-left:35px;}
+.b-list_switchers .switcher.popularity:first-child{margin-left:0;}
+}
+@media screen and (min-width: 1024px){
+.b-list_switchers .switcher.popularity:after{display:none;}
+}
+.b-list_switchers .switcher.alphabet{cursor:pointer;color:#444;}
+.b-list_switchers .switcher.alphabet:before,.b-list_switchers .switcher.alphabet:after{cursor:pointer;display:inline-block;font-size:13px;line-height:24px;text-align:center;width:24px;}
+@media screen and (max-width: 1023px){
+.b-list_switchers .switcher.alphabet:before,.b-list_switchers .switcher.alphabet:after{font-size:17px;line-height:30px;width:30px;}
+}
+.b-list_switchers .switcher.alphabet:before{font-family:shikimori;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-font-feature-settings:'liga';font-feature-settings:'liga';text-transform:none;letter-spacing:normal;content:"";}
+@media screen and (max-width: 1023px){
+.b-list_switchers .switcher.alphabet{white-space:nowrap;}
+.b-list_switchers .switcher.alphabet:after{font-size:17px;padding-left:5px;}
+}
+@media screen and (min-width: 1024px){
+.b-list_switchers .switcher.alphabet:hover{color:var(--link-hover-color);}
+}
+.b-list_switchers .switcher.alphabet:active{color:var(--link-active-color);}
+@media screen and (min-width: 1024px){
+.b-list_switchers .switcher.alphabet{margin-left:15px;}
+}
+@media screen and (max-width: 1023px){
+.b-list_switchers .switcher.alphabet{margin-left:35px;}
+}
+@media screen and (min-width: 1024px){
+.b-list_switchers .switcher.alphabet:after{display:none;}
+}
+.b-list_switchers .switcher.progress{cursor:pointer;color:#444;}
+.b-list_switchers .switcher.progress:before,.b-list_switchers .switcher.progress:after{cursor:pointer;display:inline-block;font-size:13px;line-height:24px;text-align:center;width:24px;}
+@media screen and (max-width: 1023px){
+.b-list_switchers .switcher.progress:before,.b-list_switchers .switcher.progress:after{font-size:17px;line-height:30px;width:30px;}
+}
+.b-list_switchers .switcher.progress:before{font-family:shikimori;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-font-feature-settings:'liga';font-feature-settings:'liga';text-transform:none;letter-spacing:normal;content:"";}
+@media screen and (max-width: 1023px){
+.b-list_switchers .switcher.progress{white-space:nowrap;}
+.b-list_switchers .switcher.progress:after{font-size:17px;padding-left:5px;}
+}
+@media screen and (min-width: 1024px){
+.b-list_switchers .switcher.progress:hover{color:var(--link-hover-color);}
+}
+.b-list_switchers .switcher.progress:active{color:var(--link-active-color);}
+@media screen and (min-width: 1024px){
+.b-list_switchers .switcher.progress{margin-left:15px;}
+}
+@media screen and (max-width: 1023px){
+.b-list_switchers .switcher.progress{margin-left:35px;}
+}
+.b-list_switchers .switcher.progress.selected{color:var(--link-hover-color);}
+@media screen and (min-width: 1024px){
+.b-list_switchers .switcher.progress:after{display:none;}
+}
+.b-options-floated{font-size:11px;line-height:12px;position:absolute;right:10px;z-index:1;}
+@media screen and (max-width: 1023px){
+.b-options-floated{line-height:1.65;margin-top:8px;}
+}
+@media screen and (min-width: 1024px){
+.b-options-floated{margin-top:11px;}
+}
+.b-options-floated a{color:var(--link-color);cursor:pointer;cursor:pointer;display:inline;white-space:nowrap;}
+@media screen and (min-width: 1024px){
+.b-options-floated a:hover{color:var(--link-hover-color);}
+}
+.b-options-floated a:active{color:var(--link-active-color);}
+@media screen and (min-width: 1024px){
+.b-options-floated a:hover{text-decoration:underline;border-bottom-color:var(--link-border-hover-color);}
+}
+.b-options-floated a:active{border-bottom-color:var(--link-border-active-color);}
+.b-options-floated a:after{color:#9da2a8;content:'/';display:inline-block;font-weight:normal;padding:0 7px;}
+.b-options-floated a:last-child:after{display:none;}
+@media screen and (min-width: 1024px){
+.b-options-floated.before-buttons-3{padding-right:105px;}
+}
+@media screen and (min-width: 768px) and (max-width: 1023px){
+.b-options-floated.before-buttons-3{padding-right:165px;}
+}
+@media screen and (max-width: 767px){
+.b-options-floated.before-buttons-3{padding-right:0;}
+}
+@media screen and (max-width: 767px){
+.b-options-floated.mobile-phone{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;margin-bottom:5px;margin-top:0;padding-right:0;position:initial;}
+.b-options-floated.mobile-phone a{color:var(--link-color);}
+}
+@media screen and (max-width: 767px) and (min-width: 1024px){
+.b-options-floated.mobile-phone a:hover{color:var(--link-hover-color);}
+}
+@media screen and (max-width: 767px){
+.b-options-floated.mobile-phone a:active{color:var(--link-active-color);}
+}
+.headline,.subheadline{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;background:var(--headline-background-color);border-left:5px solid var(--headline-border-color);color:var(--headline-color);font-family:var(--font-alt);font-size:18px;font-weight:700;letter-spacing:0.13px;line-height:1.65;margin-bottom:10px;padding:4px 10px 2px;position:relative;text-transform:uppercase;-webkit-transition:color 0.2s ease;transition:color 0.2s ease;-webkit-font-smoothing:antialiased;}
+@media screen and (min-width: 1200px){
+.headline,.subheadline{margin-bottom:10px;}
+}
+h2.headline,h2.subheadline{margin-top:0;}
+.subheadline{font-size:15px;line-height:30px;padding:0 10px;}
+.subheadline-buttons{margin-top:3px;position:absolute;right:3px;z-index:2;}
+@media screen and (max-width: 1023px){
+.subheadline-buttons{margin-top:0;right:4px;}
+}
+.block{margin-bottom:30px;line-height:1.65;position:relative;}
+.block:last-child{margin-bottom:0;}
+.block2{margin-bottom:45px;line-height:1.65;position:relative;}
+.block2:last-child{margin-bottom:0;}
+.blue{color:#4bf;background:#daf1ff;border-left:5px solid #bce6ff;}
+.green{color:#74d61f;background:#e7f6da;border-left:5px solid #d7efc3;}
+.orange{color:#ff8a3c;background:#ffe8d8;border-left:5px solid #ffd5b8;}
+.cc{margin-bottom:30px;line-height:1.65;position:relative;}
+.cc:last-child{margin-bottom:0;}
+.cc:after{clear:left;display:block;content:' ';}
+.m10{margin-bottom:10px!important;}
+.p-achievements-index .cc-franchises-genres{margin-bottom:30px;line-height:1.65;position:relative;margin-bottom:45px;line-height:1.65;position:relative;}
+.p-achievements-index .cc-franchises-genres:after{clear:left;display:block;content:' ';}
+@media screen and (max-width: 767px){
+.p-achievements-index .cc-franchises-genres .c-genres{margin-bottom:45px;line-height:1.65;position:relative;}
+}
+@media screen and (min-width: 768px){
+.p-achievements-index .cc-franchises-genres .c-genres{float:left;margin-right:4%;position:relative;width:48%;}
+.p-achievements-index .cc-franchises-genres .c-genres:nth-child(2n+1){clear:left;}
+}
+.p-achievements-index .cc-franchises-genres .c-genres .b-achievement{float:left;margin-right:0%;position:relative;width:100%;}
+.p-achievements-index .cc-franchises-genres .c-genres .b-achievement:nth-child(1n){margin-right:0;}
+.p-achievements-index .cc-franchises-genres .c-genres .b-achievement:nth-child(1n+1){clear:left;}
+.p-achievements-index .cc-franchises-genres .c-genres .b-achievement:last-child{margin-right:0;}
+@media screen and (max-width: 767px){
+.p-achievements-index .cc-franchises-genres .c-franchises{margin-bottom:45px;line-height:1.65;position:relative;}
+.p-achievements-index .cc-franchises-genres .c-franchises:last-child{margin-bottom:0;}
+}
+@media screen and (min-width: 768px){
+.p-achievements-index .cc-franchises-genres .c-franchises{float:left;margin-right:4%;position:relative;width:48%;}
+.p-achievements-index .cc-franchises-genres .c-franchises:nth-child(2n){margin-right:0;}
+.p-achievements-index .cc-franchises-genres .c-franchises:last-child{margin-right:0;}
+}
+@media screen and (max-width: 480px){
+.p-achievements-index .c-franchises .b-badge{float:left;margin-right:4%;position:relative;width:48%;margin-bottom:15px;}
+.p-achievements-index .c-franchises .b-badge:nth-child(2n){margin-right:0;}
+.p-achievements-index .c-franchises .b-badge:nth-child(2n+1){clear:left;}
+.p-achievements-index .c-franchises .b-badge:last-child{margin-right:0;}
+}
+@media screen and (min-width: 481px) and (max-width: 767px){
+.p-achievements-index .c-franchises .b-badge{float:left;margin-right:4%;position:relative;width:30.6666666667%;margin-bottom:15px;}
+.p-achievements-index .c-franchises .b-badge:nth-child(3n){margin-right:0;}
+.p-achievements-index .c-franchises .b-badge:nth-child(3n+1){clear:left;}
+.p-achievements-index .c-franchises .b-badge:last-child{margin-right:0;}
+}
+@media screen and (min-width: 768px) and (max-width: 1199px){
+.p-achievements-index .c-franchises .b-badge{float:left;margin-right:1%;position:relative;width:32.6666666667%;}
+.p-achievements-index .c-franchises .b-badge:nth-child(3n){margin-right:0;}
+.p-achievements-index .c-franchises .b-badge:nth-child(3n+1){clear:left;}
+.p-achievements-index .c-franchises .b-badge:last-child{margin-right:0;}
+}
+@media screen and (min-width: 1200px){
+.p-achievements-index .c-franchises .b-badge{float:left;margin-right:1%;position:relative;width:24.25%;}
+.p-achievements-index .c-franchises .b-badge:nth-child(4n){margin-right:0;}
+.p-achievements-index .c-franchises .b-badge:nth-child(4n+1){clear:left;}
+.p-achievements-index .c-franchises .b-badge:last-child{margin-right:0;}
+}
+.p-achievements-index .cc-achievements{margin-bottom:30px;line-height:1.65;position:relative;}
+.p-achievements-index .cc-achievements:last-child{margin-bottom:0;}
+.p-achievements-index .cc-achievements:after{clear:left;display:block;content:' ';}
+@media screen and (min-width: 768px){
+.p-achievements-index .cc-achievements .b-achievement{float:left;margin-right:4%;position:relative;width:48%;}
+.p-achievements-index .cc-achievements .b-achievement:nth-child(2n){margin-right:0;}
+.p-achievements-index .cc-achievements .b-achievement:nth-child(2n+1){clear:left;}
+.p-achievements-index .cc-achievements .b-achievement:last-child{margin-right:0;}
+}
+@media screen and (max-width: 767px){
+.p-achievements-index .cc-achievements .b-achievement{float:left;margin-right:0%;position:relative;width:100%;}
+.p-achievements-index .cc-achievements .b-achievement:nth-child(1n){margin-right:0;}
+.p-achievements-index .cc-achievements .b-achievement:nth-child(1n+1){clear:left;}
+.p-achievements-index .cc-achievements .b-achievement:last-child{margin-right:0;}
+}
+.p-achievements-index .cc-authors{margin-bottom:30px;line-height:1.65;position:relative;}
+.p-achievements-index .cc-authors:after{clear:left;display:block;content:' ';}
+.p-achievements-index .cc-authors:last-child{margin-bottom:0;}
+@media screen and (max-width: 480px){
+.p-achievements-index .cc-authors .b-achievement{float:left;margin-right:0%;position:relative;width:100%;margin-bottom:15px;}
+.p-achievements-index .cc-authors .b-achievement:nth-child(1n){margin-right:0;}
+.p-achievements-index .cc-authors .b-achievement:nth-child(1n+1){clear:left;}
+.p-achievements-index .cc-authors .b-achievement:last-child{margin-right:0;}
+}
+@media screen and (min-width: 481px) and (max-width: 767px){
+.p-achievements-index .cc-authors .b-achievement{float:left;margin-right:4%;position:relative;width:48%;margin-bottom:20px;}
+.p-achievements-index .cc-authors .b-achievement:nth-child(2n){margin-right:0;}
+.p-achievements-index .cc-authors .b-achievement:nth-child(2n+1){clear:left;}
+.p-achievements-index .cc-authors .b-achievement:last-child{margin-right:0;}
+}
+@media screen and (min-width: 768px) and (max-width: 1199px){
+.p-achievements-index .cc-authors .b-achievement{float:left;margin-right:2.25%;position:relative;width:31.8333333333%;}
+.p-achievements-index .cc-authors .b-achievement:nth-child(3n){margin-right:0;}
+.p-achievements-index .cc-authors .b-achievement:nth-child(3n+1){clear:left;}
+.p-achievements-index .cc-authors .b-achievement:last-child{margin-right:0;}
+}
+@media screen and (min-width: 1200px){
+.p-achievements-index .cc-authors .b-achievement{float:left;margin-right:1.75%;position:relative;width:23.6875%;}
+.p-achievements-index .cc-authors .b-achievement:nth-child(4n){margin-right:0;}
+.p-achievements-index .cc-authors .b-achievement:nth-child(4n+1){clear:left;}
+.p-achievements-index .cc-authors .b-achievement:last-child{margin-right:0;}
+}
+a{color:var(--link-color);text-decoration:none;}
+@media screen and (min-width: 1024px){
+a:hover{color:var(--link-hover-color);}
+}
+a:active{color:var(--link-active-color);}
+img{border:none;}
+::selection{background:#ffcc89;color:#555;}
+h2{color:#123;font-family:var(--font-alt);font-weight:normal;}
+h2{font-size:25px;margin-top:8px;margin-bottom:12px;}
+}
+/*! CSS Used from: Embedded */
+img{max-width:100%;}
+.m10{margin-bottom:.5rem!important;}
+.m10{margin-bottom:0!important;}
+h2{color:var(--color-text-primary);}
+.block{line-height:inherit!important;}
+.block{margin-bottom:.5rem;}
+.text{margin-left:0!important;}
+a{color:var(--color-link);}
+a:hover{color:var(--color-link-hover);}
+@media (min-width: 1025px){
+a:active{color:var(--color-link-active);}
+}
+.headline{color:var(--color-text-primary)!important;}
+.subheadline{color:var(--color-text-hint);}
+.b-list_switchers .switcher::before{display:block;flex-shrink:0;width:1em!important;font-family:var(--font-icons-family)!important;font-size:var(--font-icons-size-m)!important;font-style:normal;font-weight:400!important;line-height:1!important;letter-spacing:normal;text-transform:none;word-wrap:normal;white-space:nowrap;direction:ltr;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;-moz-osx-font-smoothing:grayscale;font-feature-settings:'liga';overflow:hidden;}
+.b-list_switchers .switcher{display:inline-block;vertical-align:top;width:40px;height:40px;padding:8px;margin:4px 8px 4px 0!important;border-radius:2px;transition:0.16s cubic-bezier(0.4, 0, 0.6, 1);}
+.b-list_switchers .switcher:last-child{margin-right:0!important;}
+.b-list_switchers .switcher{color:var(--color-text-hint)!important;}
+.b-list_switchers .switcher:hover{background-color:var(--color-overlay-text-hovered);color:var(--color-text-secondary)!important;text-decoration:none;}
+.b-list_switchers .switcher:active{background-color:var(--color-overlay-text-pressed);}
+.p-achievements-index .b-list_switchers .switcher::after{display:block!important;position:absolute;padding:.375rem .75rem;margin:.25rem .75rem;background-color:#616161;border-radius:.125rem;color:#eee;font-size:.875rem;line-height:1.25rem;white-space:nowrap;z-index:100;pointer-events:none;opacity:0;transition:.3s;}
+.p-achievements-index .b-list_switchers .switcher:hover::after{opacity:.9;}
+.p-achievements-index .b-list_switchers .switcher::after{bottom:100%;transform:translateX(-50%) translateY(0.75em);}
+.p-achievements-index .b-list_switchers .switcher:hover::after{transform:translateX(-50%) translateY(0);}
+.cc{margin-bottom:1em;line-height:inherit;}
+.headline{padding:8px 0;margin:8px 0;background:none;border:0;font-size:24px;font-weight:normal;line-height:32px;text-transform:none;}
+.subheadline{padding:16px;margin:0 -16px;background-color:transparent;border:0;font-size:.875rem;font-weight:700;line-height:1rem;text-transform:uppercase;}
+.subheadline-buttons{right:0;margin:0;z-index:2;}
+.subheadline-buttons+.subheadline{padding-right:3rem;}
+.b-achievement{display:inline-flex;flex-direction:column-reverse;justify-content:flex-end;width:100%;background:var(--color-background-dialog);border-radius:var(--border-rounded);box-shadow:0 0 0 1px rgba(0,0,0,0.08);transition:box-shadow .16s ease;overflow:hidden;}
+.b-achievement:hover{box-shadow:0 2px 8px 1px rgba(0,0,0,0.12);}
+.b-achievement .c-image{width:100%;padding-top:66.6667%;}
+.b-achievement .c-image .inner a img{content:var(--replacement-image);}
+.b-achievement .c-image .inner a img{border-radius:var(--border-rounded) var(--border-rounded) 0 0;}
+.b-achievement .c-image .inner a .border{border:0;}
+.b-achievement .c-about{width:100%;padding:1em;white-space:normal;}
+.b-achievement .c-about+.c-image{padding-top:50%;}
+.b-achievement .c-about a.title{color:var(--color-text-primary);}
+.b-achievement .c-about a.title:hover{color:var(--color-link-hover);}
+.b-achievement .c-about a.title:active{color:var(--color-link-active);}
+.b-achievement .c-about .title{margin:0 0 8px;line-height:20px;}
+.b-achievement .c-about .percent,.b-achievement .c-about .hint{color:var(--color-text-hint);}
+.b-achievement .c-about .progress{height:4px;margin:0 0 8px;background-color:var(--color-border);border-radius:4px;overflow:hidden;}
+.b-achievement .c-about .progress .bar{background-color:var(--color-primary);}
+.b-achievement .c-about .text{margin:0;font-size:14px;}
+.b-badge.b-tooltipped::after,.b-achievement .c-image a::after{content:"";position:absolute;inset:0;background:var(--replacement-image, none) center top/cover;border-radius:var(--border-rounded, 0);}
+.b-badge img{border-radius:var(--border-rounded);}
+.b-list_switchers .switcher.popularity::before{content:'trending_up';}
+.b-list_switchers .switcher.alphabet::before{content:'sort_by_alpha';}
+.b-list_switchers .switcher.progress::before{content:'sort';}
+.b-list_switchers .switcher.selected{background-color:var(--color-overlay-accent-hovered);color:var(--color-accent)!important;}
+.b-options-floated{right:0;margin-top:16px;font-size:14px;font-weight:700;line-height:16px;}
+@media (min-width: 768px){
+.b-options-floated.before-buttons-3{padding-right:152px;}
+}
+.b-options-floated a{color:var(--color-link);}
+.b-options-floated a:hover{color:var(--color-link-hover);}
+.b-options-floated a:active{color:var(--color-link-active);}
+.b-options-floated a::after{padding:0 .375rem;color:var(--color-text-disabled);}
+.b-options-floated.mobile-phone a{color:var(--color-link);}
+.b-options-floated.mobile-phone a:hover{color:var(--color-link-hover);}
+.b-options-floated.mobile-phone a:active{color:var(--color-link-active);}
+.p-achievements-index .cc-achievements{display:flex;flex-wrap:wrap;align-items:stretch;align-content:stretch;}
+@media (min-width: 768px){
+.p-achievements-index .cc-achievements .b-achievement:nth-child(n){width:calc(25% - (16px * 3 / 4));margin-right:16px;margin-bottom:16px;}
+.p-achievements-index .cc-achievements .b-achievement:nth-child(4n+4){margin-right:0;}
+.p-achievements-index .cc-franchises-genres .c-genres .b-achievement:nth-child(n){margin-right:16px;margin-bottom:16px;}
+.p-achievements-index .cc-franchises-genres .c-genres .b-achievement:nth-child(4n+4){margin-right:0;}
+.p-achievements-index .cc-franchises-genres .c-genres,.p-achievements-index .cc-franchises-genres .c-franchises{width:100%;}
+}
+.p-achievements-index .c-franchises .b-badge{position:relative;background:rgba(0,0,0,0.4);border-radius:3px;overflow:hidden;transition:.24s ease;}
+.p-achievements-index .c-franchises .b-badge img{border-radius:inherit;transition:.24s ease;}
+.p-achievements-index .c-franchises .b-badge::before{display:block;position:absolute;top:auto;right:0;bottom:0;left:0;width:auto;height:auto;padding:12px 8px 4px;background:linear-gradient(transparent, rgba(0,0,0,0.32));border-radius:0 0 3px 3px;color:#fff;font-size:12px;font-weight:bold;line-height:16px;text-align:left;text-shadow:0 1px 2px #000,0 0 6px rgba(0,0,0,0.8);backface-visibility:hidden;transition:.24s ease;opacity:1;z-index:1;}
+.p-achievements-index .c-franchises .b-badge:hover::before{transform:translate3d(0, 100%, 0);}
+.p-achievements-index .c-franchises .b-badge[original-title]::before{content:attr(original-title) ", " attr(data-progress) "%";}
+.p-achievements-index .c-franchises .b-badge[original-title].level-1::before{content:attr(original-title);}
+.p-achievements-index .c-franchises .b-badge.level-1::before{font-size:16px;line-height:20px;}
+.p-achievements-index .b-list_switchers .switcher[original-title]::after{content:attr(original-title);width:auto;}
+@media (max-width: 767px){
+.p-achievements-index .cc-franchises-genres .c-franchises{padding:0 16px;margin:0 -16px;overflow:hidden;}
+}
+.block2{margin-bottom:1.5rem;line-height:1.5rem;}
+.headline,.subheadline{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;background:#e8ebef00;color:#000;font-family:var(--font-alt);font-size:18px;font-weight:700;letter-spacing:0.13px;line-height:1.65;margin-bottom:10px;padding:4px 10px 2px;position:relative;text-transform:uppercase;-webkit-transition:color 0.2s ease;transition:color 0.2s ease;-webkit-font-smoothing:antialiased;}
+.headline,.subheadline{border-left:5px solid #00000000;}
+.headline,.subheadline{padding:0px 0.1px 5px;}
+.headline,.subheadline{border-left:0px solid #00000000;font-size:15px;}
+.cc-achievements{display:grid;grid-template-columns:repeat(4, 1fr);gap:11px;}
+.cc-achievements>*{margin-top:5px;}
+.b-badge img{border:2px solid black;border-radius:10px;}
+.b-achievement .c-image .inner a .border{border:3px solid black;border-radius:10px;}
+.b-badge.b-tooltipped::after,.b-achievement .c-image .inner a::after{content:"";position:absolute;inset:0;background:var(--replacement-image, none) center top / cover;border-radius:10px;}
+[data-hint^="Цундере 1 уровня"]{--replacement-image:url("https://camo-v3.shikimori.one/9aadc4b6601fabfcab0e23dd5b916cb1c31e3089?url=https%3A%2F%2Fi.ibb.co%2FHC49QHM%2F2.gif");border-radius:10px 10px 10px 10px;}
+.b-badge.b-tooltipped::after,.b-achievement .c-image .inner a::after{content:"";position:absolute;inset:0;background:var(--replacement-image, none) center top / cover;}
+[data-hint^="500 просмотренных аниме"]{--replacement-image:url("https://camo-v3.shikimori.one/2798eeaf7cd0159c338e6f15713f1b241dd2010d?url=https%3A%2F%2Fi.ibb.co%2FxfTRkpL%2F1.gif");border-radius:10px 10px 10px 10px;}
+.b-badge.b-tooltipped::after,.b-achievement .c-image .inner a::after{content:"";position:absolute;inset:0;background:var(--replacement-image, none) center top / cover;}
+[data-hint^="Искусствовед 1 уровня"]{--replacement-image:url("https://camo-v3.shikimori.one/d441433476965c2e6683d3ab4247899bb82e1621?url=https%3A%2F%2Fi.ibb.co%2FpZ3bC7B%2F3.gif");border-radius:10px 10px 10px 10px;}
+.b-badge.b-tooltipped::after,.b-achievement .c-image .inner a::after{content:"";position:absolute;inset:0;background:var(--replacement-image, none) center top / cover;}
+[data-hint^="Генки 1 уровня"]{--replacement-image:url("https://camo-v3.shikimori.one/8bd5c56fec4667d795b0e78a4b302cbfad51bb8e?url=https%3A%2F%2Fi.ibb.co%2Fs59f6bK%2F4.gif");border-radius:10px 10px 10px 10px;}
+.b-badge.b-tooltipped::after,.b-achievement .c-image .inner a::after{content:"";position:absolute;inset:0;background:var(--replacement-image, none) center top / cover;}
+[data-hint^="Кудере 1 уровня"]{--replacement-image:url("https://camo-v3.shikimori.one/a70e06586a517b6ef9fbe4fcaff0f1a7cbcfbd6c?url=https%3A%2F%2Fi.ibb.co%2FsK2qGC4%2F5.gif");border-radius:10px 10px 10px 10px;}
+.b-badge.b-tooltipped::after,.b-achievement .c-image .inner a::after{content:"";position:absolute;inset:0;background:var(--replacement-image, none) center top / cover;}
+[data-hint^="Комедия 2 уровня"]{--replacement-image:url("https://camo-v3.shikimori.one/cb0341a09834d569facefab32380f2f6c4563ee4?url=https%3A%2F%2Fi.ibb.co%2FVWqS0Ly%2F1.gif");border-radius:10px 10px 10px 10px;}
+.b-badge.b-tooltipped::after,.b-achievement .c-image .inner a::after{content:"";position:absolute;inset:0;background:var(--replacement-image, none) center top / cover;}
+[data-hint^="Романтика 2 уровня"]{--replacement-image:url("https://camo-v3.shikimori.one/c25f50b3938241e3bb66f30cae04df882a0ce063?url=https%3A%2F%2Fi.ibb.co%2F30FNLXT%2F2.gif");border-radius:10px 10px 10px 10px;}
+.b-badge.b-tooltipped::after,.b-achievement .c-image .inner a::after{content:"";position:absolute;inset:0;background:var(--replacement-image, none) center top / cover;}
+[data-hint^="Фэнтези 2 уровня"]{--replacement-image:url("https://camo-v3.shikimori.one/55187a3e2b378da05249fe5854f8dbe3fae8ab5e?url=https%3A%2F%2Fi.ibb.co%2FtsgXr8K%2F3.gif");border-radius:10px 10px 10px 10px;}
+.b-badge.b-tooltipped::after,.b-achievement .c-image .inner a::after{content:"";position:absolute;inset:0;background:var(--replacement-image, none) center top / cover;}
+[data-hint^="Безумие / Психологическое 3 уровня"]{--replacement-image:url("https://camo-v3.shikimori.one/f01ef145f7db0c09720fdf6161c9af5969957130?url=https%3A%2F%2Fi.ibb.co%2FqsVXfYj%2Fanime-gifs-22.gif");border-radius:10px 10px 10px 10px;}
+.b-achievement .c-image .inner a::after{content:"";position:absolute;inset:0;background:var(--replacement-image, none) center top / cover;}
+[data-hint^="Фантастика 1 уровня"]{--replacement-image:url("https://camo-v3.shikimori.one/0927f3f50c304e027a497c2a6c2db3f4c0349510?url=https%3A%2F%2Fi.ibb.co%2F5xJbg4D%2F4.gif");border-radius:10px 10px 10px 10px;}
+.b-achievement .c-image .inner a::after{content:"";position:absolute;inset:0;background:var(--replacement-image, none) center top / cover;}
+[data-hint^="Сверхъестественное 2 уровня"]{--replacement-image:url("https://camo-v3.shikimori.one/56db6db7685b841ebdfce99fa0c2375a966903d3?url=https%3A%2F%2Fi.ibb.co%2FHYV4b0Q%2F5.gif");border-radius:10px 10px 10px 10px;}
+.b-achievement .c-image .inner a::after{content:"";position:absolute;inset:0;background:var(--replacement-image, none) center top / cover;}
+[data-hint^="Драма 2 уровня"]{--replacement-image:url("https://camo-v3.shikimori.one/531441243c976a459d2fb3d36762ee7a690d6c90?url=https%3A%2F%2Fi.ibb.co%2F1vw6F29%2F6.gif");border-radius:10px 10px 10px 10px;}
+.b-badge.b-tooltipped::after,.b-achievement .c-image .inner a::after{content:"";position:absolute;inset:0;background:var(--replacement-image, none) center top / cover;}
+[data-hint^="Хоррор / Триллер 3 уровня"]{--replacement-image:url("https://camo-v3.shikimori.one/1757c32c9d1acea5453ff63fa630861d3de2ed38?url=https%3A%2F%2Fi.ibb.co%2F7t9vv5N%2F7.gif");border-radius:10px 10px 10px 10px;}
+[href$='/achievements/franchise/tokyo_ghoul']{--replacement-image:url("https://camo-v3.shikimori.one/ef0c89479847b31e92bc7b19e507e3f3d9ef8adc?url=https%3A%2F%2Fi.ibb.co%2F1RNrgQY%2Fa48c34dadfe063c13a3daaddf4580e26.gif");border:1px solid black;border-radius:10px;}
+[href$='/franchise/one_punch_man']{--replacement-image:url("https://camo-v3.shikimori.one/3e784422bf1fb388e074c0e5233a5e9b4211d441?url=https%3A%2F%2Fi.ibb.co%2F7NP7tx1%2F9be9d42dbf701622623731557eacd7c0.gif");border:1px solid black;border-radius:10px;}
+[href$='franchise/sword_art_online']{--replacement-image:url("https://camo-v3.shikimori.one/53a331cac0a9eb884aebae7cf442efb572020396?url=https%3A%2F%2Fi.ibb.co%2FjbPj3dY%2Fezgif-3-555ed63222.gif");border:1px solid black;border-radius:10px;}
+[href$='achievements/franchise/naruto']{--replacement-image:url("https://camo-v3.shikimori.one/2c9a1b49b5281038cec06e470837c5c04ec1c8c7?url=https%3A%2F%2Fi.ibb.co%2F1fRPXrV%2Fimage.gif");border:1px solid black;border-radius:10px;}
+[href$='franchise/re_zero']{--replacement-image:url("https://camo-v3.shikimori.one/2a993f6af3a346f5f65a044511f93d830a3eab99?url=https%3A%2F%2Fi.ibb.co%2F5LthH2Z%2FGargantuan-Hidden-Akitainu-mobile.gif");border:1px solid black;border-radius:10px;}
+[href$='franchise/evangelion']{--replacement-image:url("https://camo-v3.shikimori.one/40710e0002da2ee1219b1946b951afc30949b692?url=https%3A%2F%2Fi.ibb.co%2Fm5cMwRj%2Fthe-end-of-evangelion.gif");border:1px solid black;border-radius:10px;}
+[href$='franchise/haikyuu']{--replacement-image:url("https://camo-v3.shikimori.one/8e8ca49be5eb4c2c2eaadf1c22c4affc84fc44b9?url=https%3A%2F%2Fi.ibb.co%2FxGWzQ0W%2Fhaikyuu-spike.gif");border:1px solid black;border-radius:10px;}
+[href$='franchise/kaguya_sama']{--replacement-image:url("https://camo-v3.shikimori.one/20c9f5f5c48ceaa5ae077220832dd5fa1faf976e?url=https%3A%2F%2Fi.ibb.co%2F1X4rXkD%2Fchika-fujiwara-bonk.gif");border:1px solid black;border-radius:10px;}
+[href$='franchise/yahari_ore_no_seishun_love_comedy_wa_machigatteiru']{--replacement-image:url("https://camo-v3.shikimori.one/003c990df3e4916f5543d9ef26bc40f2ac35924b?url=https%3A%2F%2Fi.ibb.co%2FswbWZmW%2Foregairu-yukino.gif");border:1px solid black;border-radius:10px;}
+[href$='franchise/kuroko_no_basket']{--replacement-image:url("https://camo-v3.shikimori.one/72b494a30afc122e3797d720a18eeec945206ecf?url=https%3A%2F%2Fi.ibb.co%2FT4n8VYz%2Fbasketball-baseketball.gif");border:1px solid black;border-radius:10px;}
+[href$='chuunibyou_demo_koi_ga_shitai']{--replacement-image:url("https://camo-v3.shikimori.one/167e9327d6a5696e398703bea9ce58a18ff61c67?url=https%3A%2F%2Fi.ibb.co%2F7G68QKq%2Ffail-anime.gif");border:1px solid black;border-radius:10px;}
+[href$='franchise/k_on']{--replacement-image:url("https://camo-v3.shikimori.one/0f97213e0491555437915b2080206bec1be24472?url=https%3A%2F%2Fi.ibb.co%2FcJNM5Jd%2FUntimely-Important-Furseal-size-restricted.gif");border:1px solid black;border-radius:10px;}
+[href$='franchise/zero_no_tsukaima']{--replacement-image:url("https://camo-v3.shikimori.one/6c75090ecf5cb080293ae56d683e9685052255fa?url=https%3A%2F%2Fi.ibb.co%2FYTdn2P8%2F1328077410-0-72cae-4d3a3c83-orig.gif");border:1px solid black;border-radius:10px;}
+[href$='franchise/sora_no_otoshimono']{--replacement-image:url("https://camo-v3.shikimori.one/d5a98d5d32d5968a94ff4c98c36a32ee3bed25de?url=https%3A%2F%2Fi.ibb.co%2F52JScTt%2Fimage.gif");border:1px solid black;border-radius:10px;}
+/*! CSS Used fontfaces */
+@font-face{font-family:"shikimori";src:url(https://shikimori.one/assets/shikimori-31a18aa16bbb002c2908f91b362844aa0b0dddbff48e1c858d7b25c74daa1c4c.eot?) format("eot"),url(https://shikimori.one/assets/shikimori-e5e47e5da6376bc198111a19b17c48cbed0e4c6a9e21b7f96b5119d215436689.woff2) format("woff2"),url(https://shikimori.one/assets/shikimori-3dd3483f8a811004ed4659bf21cfb056a84458dfa946e4b98909520b5964a322.woff) format("woff"),url(https://shikimori.one/assets/shikimori-81b9f3d6f599ba001145ef26c0430125216172898d044b9c8ce6350fa7dd57e7.ttf) format("truetype"),url(https://shikimori.one/assets/shikimori-7251f09040e5cc59060e3ab393e61e7b500b0bf6e3d1924d5b6a44d015491753.svg#shikimori) format("svg");}
